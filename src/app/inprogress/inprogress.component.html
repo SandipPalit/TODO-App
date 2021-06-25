@@ -1,0 +1,27 @@
+<div class="mat-elevation-z8 table tableheader">
+  <div class="prioritycolumnheader">
+    Priority
+  </div>
+  <div class="prioritycolumnheader">
+    Due In
+  </div>
+  <div class="taskcolumnheader ">
+    Tasks in Progress
+  </div>
+</div>
+<div *ngFor="let element of InProgress_data" class="mat-elevation-z8 table">
+  <div class="prioritycolumn">
+    {{element.Priority}}
+  </div>
+  <div class="prioritycolumn">
+    {{calculateDiff(element.Date)}} days
+  </div>
+  <div class="taskcolumn">
+    {{element.Task}}
+  </div>
+  <div class="buttoncolumn">
+    <button class="navigatebutton" mat-raised-button color="primary" (click)="Completed(element)">Completed</button>
+  </div>
+</div>
+
+

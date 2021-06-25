@@ -1,0 +1,108 @@
+.inputform {
+  margin: 2%;
+  display: flex;
+}
+.priorityselect {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Times New Roman";
+}
+.datepicker {
+  margin-left: 2%;
+}
+.dateselect {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Times New Roman";
+}
+.inputfield {
+  margin-left: 2%;
+  width: 100%;
+  flex: 1;
+  margin-right: 1%;
+}
+.inputcontent {
+  height: 30px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+  font-family: "Times New Roman";
+}
+.inputbutton {
+  flex: 1;
+  margin-top: 10px;
+  margin-left: 1%;
+  margin-bottom: 20px;
+  max-width: 50px;
+  background-color:  rgb(0, 0, 150);
+}
+.table {
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 1%;
+  min-height: 55px;
+  max-width: 96%;
+  display: flex;
+  color:  rgb(0, 0, 150);
+  font-weight: bold;
+  font-family: "Arial";
+}
+.table:last-child {
+  margin-bottom: 3% !important;
+}
+.prioritycolumn{
+  flex: 1;
+  font-size: 14px;
+  line-height: 30px;
+  padding-top: 22px;
+  margin-left:1%;
+  margin-right: 1%;
+  max-width: 8%;
+}
+.taskcolumn {
+  flex: 1;
+  font-size: 14px;
+  line-height: 30px;
+  padding-top: 22px;
+  margin-left:1%;
+  margin-right: 1%;
+  max-width: 60%;
+  overflow:auto ;
+}
+.buttoncolumn {
+  flex: 2;
+  max-width: 19%;
+  padding-top: 10px;
+}
+.navigatebutton {
+  flex: 1;
+  margin-top: 10px;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 20px;
+  background-color:  rgb(0, 0, 150);
+}
+.tableheader {
+  font-size: 16px;
+  line-height: 40px ;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  height: 55px;
+}
+.taskcolumnheader {
+  flex: 1;
+  padding-top: 8px;
+  line-height: 40px;
+  min-height: 40px;
+  margin-left:1%;
+  margin-right: 1%;
+}
+.prioritycolumnheader {
+  flex: 1;
+  padding-top: 8px;
+  line-height: 40px;
+  min-height: 40px;
+  margin-left:1%;
+  margin-right: 1%;
+  max-width: 8%;
+}

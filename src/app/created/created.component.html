@@ -1,0 +1,50 @@
+<form class="inputform">
+  <mat-form-field appearance="fill" color="primary" >
+    <mat-label>Select Priority</mat-label>
+    <mat-select [(ngModel)]="priority" name="Priority" color="primary" class="priorityselect">
+      <mat-option *ngFor="let food of priorityList" [value]="food.value">
+        {{food.value}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field appearance="fill" color="primary" class="datepicker">
+    <mat-label>Due In</mat-label>
+    <input matInput [matDatepicker]="picker" name="DueDate" class="dateselect" [(ngModel)]="dueDate" [min]="currentDate">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker ></mat-datepicker>
+  </mat-form-field>
+  <mat-form-field class="inputfield" color="primary">
+    <mat-label>Add New Task</mat-label>
+    <input class="inputcontent" matInput placeholder="Enter New Task" name="Task" autocomplete="off" [(ngModel)]="newTask">
+  </mat-form-field>
+  <button class="inputbutton" mat-raised-button color="primary" (click)="AddItem()">Add</button>
+</form>
+
+<div class="mat-elevation-z8 table tableheader">
+  <div class="prioritycolumnheader">
+    Priority
+  </div>
+  <div class="prioritycolumnheader">
+    Due In
+  </div>
+  <div class="taskcolumnheader ">
+    Tasks Created
+  </div>
+</div>
+
+<div *ngFor="let element of Created_data" class="mat-elevation-z8 table">
+  <div class="prioritycolumn">
+    {{element.Priority}}
+  </div>
+  <div class="prioritycolumn">
+    {{calculateDiff(element.Date)}} days
+  </div>
+  <div class="taskcolumn">
+    {{element.Task}}
+  </div>
+  <div class="buttoncolumn">
+    <button class="navigatebutton" mat-raised-button color="primary" (click)="InProgress(element)">In Progress</button>
+    <button class="navigatebutton" mat-raised-button color="primary" (click)="Completed(element)">Completed</button>
+  </div>
+</div>
+

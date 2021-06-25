@@ -1,0 +1,24 @@
+
+<div class="mat-elevation-z8 table tableheader">
+  <div class="prioritycolumnheader">
+    Priority
+  </div>
+  <div class="columncolumnheader">
+    Completed
+  </div>
+  <div class="taskcolumnheader ">
+    Tasks Completed
+  </div>
+</div>
+<div *ngFor="let element of Completed_data" class="mat-elevation-z8 table">
+  <div class="prioritycolumn">
+    {{element.Priority}}
+  </div>
+  <div class="completedcolumn">
+    {{calculateDiff(element.Date)}}
+  </div>
+  <div class="taskcolumn">
+    {{element.Task}}
+  </div>
+</div>
+

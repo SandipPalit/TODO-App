@@ -1,0 +1,29 @@
+<mat-card class="header mat-elevation-z4">
+  <div class="appName">
+    TODO App
+  </div>
+  <div class="myDetails">
+    ~ “The future depends on what you do today.”
+  </div>
+</mat-card>
+
+<mat-tab-group mat-stretch-tabs class="content">
+  <mat-tab>
+    <ng-template mat-tab-label>
+      CREATED
+    </ng-template>
+    <app-created></app-created>
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      IN PROGRESS
+    </ng-template>
+    <app-inprogress></app-inprogress>
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      COMPLETED
+    </ng-template>
+    <app-completed></app-completed>
+  </mat-tab>
+</mat-tab-group>
