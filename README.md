@@ -1,4 +1,4 @@
-# TOTO-App
+# TODO-App
 
 ### This TODO App will help you to track your daily tasks.
 
